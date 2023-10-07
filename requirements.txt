@@ -1,0 +1,7 @@
+fastapi==0.103.2
+uvicorn==0.23.2pip pip
+gunicorn==21.2.0
+sqlalchemy==2.0.21
+redis==5.0.1
+passlib==1.7.4
+PyJWT==2.8.0
