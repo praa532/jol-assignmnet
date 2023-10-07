@@ -43,13 +43,13 @@ The /login endpoint in endpoints/auth.py performs user authentication using Post
 # Running the Application
 You can run the application using Uvicorn or Gunicorn:
 
-```bash
-uvicorn app.main:app --host 0.0.0.0 --port 8000
+    ```bash
+    uvicorn app.main:app --host 0.0.0.0 --port 8000
 
 or
 
-```bash
-gunicorn -w 4 -k uvicorn.workers.UvicornWorker app.main:app -b 0.0.0.0:8000
+    ```bash
+    gunicorn -w 4 -k uvicorn.workers.UvicornWorker app.main:app -b 0.0.0.0:8000
 
 Ensure you have installed the required packages listed in requirements.txt.
 
