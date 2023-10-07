@@ -4,12 +4,14 @@ from web.v2 import hello as hello2
 from web.endpoints import auth, user
 from utils.database import engine
 from utils.redis import redis_client
+from fastapi.staticfiles import StaticFiles
 from utils.database import Base
 
 Base.metadata.create_all(bind=engine)
 
-
 app = FastAPI()
+
+app.mount("/static", StaticFiles(directory="static"), name="static")
 
 class MyPSQL:
     def __init__(self):
