@@ -1,5 +1,5 @@
 fastapi==0.103.2
-uvicorn==0.23.2pip pip
+uvicorn==0.23.2
 gunicorn==21.2.0
 sqlalchemy==2.0.21
 redis==5.0.1
